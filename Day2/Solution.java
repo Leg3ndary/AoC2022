@@ -134,7 +134,7 @@ class Solution {
     }
     
     public static void main(String[] args) {
-    try {
+        try {
             System.out.println(problem1("data.txt"));
             System.out.println(problem2("data.txt"));
         } catch (Exception e) {
