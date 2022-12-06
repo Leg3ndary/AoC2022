@@ -75,7 +75,7 @@ def problem1(file: str) -> int:
         score += meta
 
     f.close()
-    return score  # Return your answer here.
+    return score
 
 
 def problem2(file: str) -> int:
@@ -149,7 +149,7 @@ def problem2(file: str) -> int:
         score += meta
 
     f.close()
-    return score  # Return your answer here.
+    return score
 
 print(problem1("data.txt"))
 print(problem2("data.txt"))

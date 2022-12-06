@@ -32,7 +32,7 @@ def problem1(file: str) -> int:
         total += get_priority(find_item(line))
         
     f.close()
-    return total # Return your answer here.
+    return total
 
 
 
@@ -74,7 +74,7 @@ def problem2(file: str) -> int:
             temp = []
 
     f.close()
-    return total # Return your answer here.
+    return total
 
 print(problem1("data.txt"))
 print(problem2("data.txt"))
