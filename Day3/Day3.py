@@ -22,7 +22,7 @@ def problem1(file: str) -> int:
     def get_priority(item: str) -> int:
         """
         Return the priority number
-        
+
         The best way to go about this is probably ordinals
         """
         return ord(item) - 96 if item.islower() else ord(item) - 38 # 64 - 26
@@ -30,7 +30,7 @@ def problem1(file: str) -> int:
     total = 0
     for line in lines:
         total += get_priority(find_item(line))
-        
+
     f.close()
     return total
 
