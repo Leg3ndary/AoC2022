@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Solution1 {
+class Solution {
 
   public static int problem1(String filename) throws FileNotFoundException
   {
@@ -103,4 +103,4 @@ class Solution1 {
         e.printStackTrace();
     }
   }
-}   
+}
