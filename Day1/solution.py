@@ -22,8 +22,7 @@ def problem1(file: str) -> str:
                 max = temp
             temp = 0
 
-    return max # Return your answer here.
-
+    return max
 
 
 def problem2(file: str) -> str:
@@ -61,4 +60,8 @@ def problem2(file: str) -> str:
                     top.append(temp)
             temp = 0
 
-    return top[0] + top[1] + top[2] # Return your answer here.
+    return top[0] + top[1] + top[2]
+
+
+print(problem1("data.txt"))
+print(problem2("data.txt"))

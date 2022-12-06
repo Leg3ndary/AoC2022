@@ -35,7 +35,7 @@ class Solution1 {
         }
       }
 
-      return biggest; // Return your answer here
+      return biggest;
     }
     finally
     {
@@ -86,7 +86,7 @@ class Solution1 {
         }
       }
       
-      return top[0] + top[1] + top[2]; // Return your answer here
+      return top[0] + top[1] + top[2];
     }
     finally
     {
