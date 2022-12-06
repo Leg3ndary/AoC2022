@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Solution {
+class Day3 {
 
     public static int getPriority(char character) {
         // Luckily ords in java are similar to python
@@ -61,7 +61,7 @@ class Solution {
                 total += getPriority(getItem(line));
             }
             
-            return total; // Return your answer here
+            return total;
         }
         finally
         {
@@ -93,7 +93,7 @@ class Solution {
                 }
             }
             
-            return total; // Return your answer here
+            return total;
         }
         finally
         {
