@@ -18,12 +18,12 @@ def problem1(file: str) -> str:
     for i in range(stack_length):
         stacks.append([])
 
-    for stack in lines[:split - 1]:
+    for stack in lines[: split - 1]:
         for i in range(stack_length):
             if stack[i * 4 + 1].strip() != "":
                 stacks[i].append(stack[i * 4 + 1])
 
-    for line in lines[split + 1:]:
+    for line in lines[split + 1 :]:
         quantity = int(line.split(" ")[1])
         stack_from = int(line.split(" ")[3]) - 1
         stack_to = int(line.split(" ")[5]) - 1
@@ -36,7 +36,7 @@ def problem1(file: str) -> str:
     for stack in stacks:
         answer += stack[0]
 
-    return answer # Return your answer here.
+    return answer  # Return your answer here.
 
 
 def problem2(file: str) -> str:
@@ -57,12 +57,12 @@ def problem2(file: str) -> str:
     for i in range(stack_length):
         stacks.append([])
 
-    for stack in lines[:split - 1]:
+    for stack in lines[: split - 1]:
         for i in range(stack_length):
             if stack[i * 4 + 1].strip() != "":
                 stacks[i].append(stack[i * 4 + 1])
 
-    for line in lines[split + 1:]:
+    for line in lines[split + 1 :]:
         quantity = int(line.split(" ")[1])
         stack_from = int(line.split(" ")[3]) - 1
         stack_to = int(line.split(" ")[5]) - 1
@@ -77,7 +77,8 @@ def problem2(file: str) -> str:
     for stack in stacks:
         answer += stack[0]
 
-    return answer # Return your answer here.
+    return answer  # Return your answer here.
+
 
 print(problem1("data.txt"))
 print(problem2("data.txt"))

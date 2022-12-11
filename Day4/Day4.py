@@ -58,5 +58,6 @@ def problem2(file: str) -> str:
 
     return total
 
+
 print(problem1("data.txt"))
 print(problem2("data.txt"))

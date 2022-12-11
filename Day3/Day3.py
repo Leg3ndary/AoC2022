@@ -13,7 +13,10 @@ def problem1(file: str) -> int:
 
         We can just use some iteration to find it
         """
-        over, under = compartment[:round(len(compartment) / 2)], compartment[round(len(compartment) / 2):]
+        over, under = (
+            compartment[: round(len(compartment) / 2)],
+            compartment[round(len(compartment) / 2) :],
+        )
         for char in over:
             for second_char in under:
                 if char == second_char:
@@ -25,7 +28,7 @@ def problem1(file: str) -> int:
 
         The best way to go about this is probably ordinals
         """
-        return ord(item) - 96 if item.islower() else ord(item) - 38 # 64 - 26
+        return ord(item) - 96 if item.islower() else ord(item) - 38  # 64 - 26
 
     total = 0
     for line in lines:
@@ -33,7 +36,6 @@ def problem1(file: str) -> int:
 
     f.close()
     return total
-
 
 
 def problem2(file: str) -> int:
@@ -75,6 +77,7 @@ def problem2(file: str) -> int:
 
     f.close()
     return total
+
 
 print(problem1("data.txt"))
 print(problem2("data.txt"))

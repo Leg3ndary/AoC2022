@@ -151,5 +151,6 @@ def problem2(file: str) -> int:
     f.close()
     return score
 
+
 print(problem1("data.txt"))
 print(problem2("data.txt"))
